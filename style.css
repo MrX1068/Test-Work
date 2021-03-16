@@ -1,133 +1,123 @@
-
 * {
   margin: 0;
   padding: 0;
-
 }
 #home {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: rgb(31, 30, 39);
-  height: 100vh;
-  padding: 20px 0;
+  padding: 50px 0;
 }
-.home-content {
-  margin: 20px 0;
+.head-content,
+.order-btn,
+.logos {
+  text-align: center;
 }
-h3 {
-  font-size: 24px;
+
+.head-content,
+button {
   font-family: "Inter";
-  color: rgb(255, 142, 75);
   font-weight: bold;
   text-transform: uppercase;
   line-height: 1.2;
 }
-h1 {
-  font-size: 54px;
-  font-family: "Inter";
-  color: rgb(255, 255, 255);
-  font-weight: bold;
-  text-transform: uppercase;
-  line-height: 1.259;
-}
-p {
+.head-content h3 {
   font-size: 24px;
-  font-family: "Inter";
+  color: rgb(255, 142, 75);
+}
+
+.head-content h1 {
+  margin: 15px 0;
+  font-size: 50px;
+}
+.head-content h1 span {
+  font-weight: 400;
+}
+.head-content h1,
+.head-content p,
+.list-content p,
+button {
   color: rgb(255, 255, 255);
-  font-weight: bold;
-  text-transform: uppercase;
-  line-height: 1.333;
+}
+.head-content p {
+  font-size: 24px;
 }
 .price-tag-color {
   color: #0092ff;
 }
 
-.check {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 1600px;
-  height: 1500px;
-  z-index: 71;
-}
-.Shape {
-  background-color: rgb(255, 142, 75);
-  position: absolute;
-  left: 561px;
-  top: 324px;
-  width: 18px;
-  height: 18px;
-  z-index: 70;
+.list-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0;
 }
 
 .list-content p {
-  font-size: 16px;
   font-family: "Inter";
-  color: rgb(255, 255, 255);
   line-height: 2;
-  text-align: left;
 }
 .fa-check-circle {
   color: rgb(255, 142, 75);
   margin-right: 10px;
 }
-.fa-arrow-right {
-  color: #ffffff;
-  margin-left: 10px;
+.list-content p,
+button {
+  font-size: 14px;
 }
 button {
   border-radius: 37px;
   background-color: rgb(0, 146, 255);
-  outline: none;
   border: #0092ff;
-  width: 400px;
-  height: 74px;
-  z-index: 91;
-  font-size: 16px;
-  font-family: "Inter";
-  color: rgb(255, 255, 255);
-  font-weight: bold;
-  text-transform: uppercase;
-  line-height: 1.2;
-  text-align: center;
+  padding: 20px 40px;
+  cursor: pointer;
 }
+.fa-arrow-right {
+  color: #ffffff;
+  margin-left: 15px;
+}
+.logos img {
+  margin: 30px 20px 0;
+}
+
+/*************** Home section ends ****************/
+
+/************ Banner card section starts **********/
 
 #banner {
   background-color: rgb(248, 249, 251);
-
-  height: 713px;
-  margin: 0 auto;
-  padding: 0 40px;
+  padding: 50px 50px;
 }
-.card-head h2 {
-  font-size: 40px;
-  font-family: "Inter";
-  color: rgb(0, 146, 255);
+.card-head {
+  text-align: center;
   font-weight: bold;
   line-height: 1.35;
-  text-align: center;
+  font-family: "Inter";
 }
+.card-head h2,
 .card-head h3 {
   font-size: 40px;
-  font-family: "Inter";
-  color: #1d194a;
-  font-weight: bold;
-  line-height: 1.35;
-  text-align: center;
 }
-
+.card-head h2 {
+  color: rgb(0, 146, 255);
+}
+.card-head h3 {
+  color: #1d194a;
+  margin: 15px 0;
+}
+.card-head h3,
+.card-head p,
+.card-text p {
+  color: rgb(35, 33, 66);
+}
 .card-head p {
   font-size: 16px;
-  font-family: "Inter";
-  color: rgb(35, 33, 66);
   line-height: 2;
-  text-align: center;
+  margin-bottom: 20px;
 }
 
 .cards {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .card {
   border-radius: 20px;
@@ -135,7 +125,12 @@ button {
   box-shadow: 0px 14px 34px 0px rgba(0, 1, 87, 0.04);
   width: 417px;
   height: 212px;
-  padding: 40px;
+  padding: 30px;
+  margin: 10px;
+
+  font-family: "Inter";
+  font-weight: bold;
+  line-height: 1.455;
 }
 
 .symbol-and-head {
@@ -145,17 +140,88 @@ button {
 
 .symbol-and-head h4 {
   font-size: 22px;
-  font-family: "Inter";
   color: rgb(29, 25, 74);
-  font-weight: bold;
-  line-height: 1.455;
+  margin: 0 20px;
+}
+.card-text {
   text-align: left;
+  margin: 20px 0;
+  font-size: 16px;
+  line-height: 1.625;
 }
 
-.card-text p {
-  font-size: 16px;
-  font-family: "Inter";
-  color: rgb(35, 33, 66);
-  line-height: 1.625;
-  text-align: left;
+/*********** media properites for 600px devices ****************/
+
+@media only screen and (max-width: 600px) {
+  #home,
+  #banner {
+    padding: 50px 15px;
+  }
+  #banner {
+    padding: 50px 0;
+  }
+  .card {
+    width: fit-content;
+    height: fit-content;
+    padding: 20px;
+  }
+  .head-content h3,
+  .head-content p {
+    font-size: 18px;
+  }
+  .head-content h1 {
+    margin: 20px 0;
+    font-size: 24px;
+  }
+  button {
+    padding: 20px 30px;
+    cursor: pointer;
+  }
+  .logos img {
+    margin: 40px 20px 0;
+  }
+  .fa-arrow-right {
+    color: #ffffff;
+    margin-left: 10px;
+  }
+  .cards {
+    flex-wrap: wrap;
+  }
+  .card-head h2,
+  .card-head h3 {
+    font-size: 24px;
+  }
+  .symbol-and-head h4 {
+    font-size: 18px;
+  }
+  .card-text {
+    font-size: 15px;
+  }
+}
+
+/*********** media properites for 1000px devices ****************/
+
+@media only screen and (max-width: 1300px) {
+  .cards {
+    flex-wrap: wrap;
+  }
+  .card {
+  width: 90%;
+    height: fit-content;
+    padding: 40px;
+  }
+}
+
+
+/*********** media properites for 1300px devices ****************/
+
+@media only screen and (max-width: 1000px) {
+  .cards {
+    flex-wrap: wrap;
+  }
+  .card {
+  width: 90%;
+    height: fit-content;
+    padding: 40px;
+  }
 }
