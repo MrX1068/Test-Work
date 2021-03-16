@@ -70,10 +70,17 @@ button {
   border: #0092ff;
   padding: 20px 40px;
   cursor: pointer;
+  margin-top: 10px;
 }
 .fa-arrow-right {
   color: #ffffff;
   margin-left: 15px;
+}
+.logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .logos img {
   margin: 30px 20px 0;
@@ -102,7 +109,7 @@ button {
 }
 .card-head h3 {
   color: #1d194a;
-  margin: 15px 0;
+  margin: 5px 0 15px 0;
 }
 .card-head h3,
 .card-head p,
@@ -113,8 +120,11 @@ button {
   font-size: 16px;
   line-height: 2;
   margin-bottom: 20px;
+ 
 }
-
+.card-head p, .card-text  {
+font-weight: normal;
+}
 .cards {
   display: flex;
   justify-content: space-between;
@@ -139,7 +149,7 @@ button {
 }
 
 .symbol-and-head h4 {
-  font-size: 22px;
+  font-size: 19px;
   color: rgb(29, 25, 74);
   margin: 0 20px;
 }
